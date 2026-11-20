@@ -1,0 +1,72 @@
+Prior-art search for the perpendicular perturbation conjecture
+19 November 2026, New York time
+
+Target: Fish, King, Miller, Palsson and Wahlenmayer, Integers 20 (2020)
+A96, Conjecture 6.5. Definitions 2.8, 2.10, 4.1 and 4.4 control the
+statement. The exact quantifier is one fixed non-strictly convex norm
+and all sufficiently large cardinalities.
+https://math.colgate.edu/~integers/u96/u96.pdf
+
+Closest constructions within the source:
+* Theorem 1.2 uses a straight boundary segment. The constructions are
+  perpendicular perturbations, as the authors note in Example 4.2.
+* Theorem 1.3 gives the distance-equality pattern on a small Euclidean
+  circular arc. It does not exclude four points sharing a norm circle.
+* Example 4.3 has collinear triples for n >= 5 (see Example 4.5).
+* Theorem 1.5 proves the conjectured classification for the maximum norm.
+  Transporting the classification by a linear isometry does not give
+  a counterexample to the parallel-displacements formulation.
+* Proposition 21 of Martini, Swanepoel and Weiss proves the intersection
+  property of planar positive homothets used in the present proof.
+  https://arxiv.org/pdf/0708.2900
+
+Public status and citation checks:
+* The MathDB entry identifies the general case as open and shows zero
+  submitted solutions. Its progress summary has never been refreshed.
+  https://mathdb.com/p/343860/the-conjecture-on-line-like-crescent-configurations-in-non-s
+* The OpenAlex record W2973400484 returned no indexed citing works.
+  Independent searches identified recent work on three-dimensional
+  configurations and on nine-point Euclidean configurations. These
+  address other settings (arXiv:2610.38368 and arXiv:2611.03688).
+* Searched for the paper title, arXiv identifier, conjecture number,
+  perpendicular perturbation(s), line-like crescent, non-strictly
+  convex norms, Minkowski planes, elliptical patches, and affine
+  counterexamples in literature searches, DataCite and Zenodo.
+* Searched GitHub code, issues, pull requests and commit messages under
+  title/identifier and terminology variants. Inspected the relevant
+  author repositories (the-set-of-sets/nin, l1_linfty and lp_draw).
+  The reuF2F formalization concerns a different conjecture in the paper.
+  The Justin Sun Prize catalog refers to the Euclidean Erdos problem.
+* The proof was checked independently within the AI agent team,
+  including the oblique-projection interpretation of Definition 4.1.
+
+No earlier public disproof of Conjecture 6.5 was located in these
+checks. Search coverage is incomplete, especially for unindexed notes
+or work under other terminology. No human expert review is claimed.
+
+Additional bibliographic cross-check, 19 November 2026:
+* Corollary 3.4, page 16 of the original article, also gives the
+  no-three-collinear condition for circular arcs. It stops there. An
+  entirely Euclidean norm satisfies its hypotheses and has all the
+  chosen points on a norm circle, so this corollary alone cannot
+  supply the required no-four-on-a-norm-circle property.
+* zbMATH lists the published article as Zbl 1465.52027, record
+  7306642, and links DOI 10.5281/zenodo.10802297. This deposit has
+  a separate OpenAlex record, W6967587290. Both that record and
+  W2973400484 returned zero indexed citations. DataCite reported zero
+  citations to the deposit, and OpenCitations returned an empty list
+  for that DOI. These are coverage observations, not priority proofs.
+* GitHub issue/PR searches using the deposit DOI and the MathDB
+  problem number together with "crescent" returned no matches.
+* Semantic Scholar API returned HTTP 429. Crossref bibliographic
+  search did not identify this article among the first two results;
+  neither was counted as a negative citation check.
+
+zbMATH whole-record phrase searches, 19 November 2026:
+"line-like configurations" returned only Fish et al.; "perpendicular
+perturbation" returned that paper and an unrelated plasma paper.
+"crescent configurations" returned five records. The other four were
+the 2016 classification arXiv:1610.07836 (finite Euclidean planar
+distance patterns), Burt et al. (Euclidean dimension growing with n,
+arXiv:1509.07220), and the two 2026 Euclidean papers noted above.
+None supplies the single non-strictly convex planar norm required by 6.5.

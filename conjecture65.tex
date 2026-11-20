@@ -1,0 +1,109 @@
+\documentclass[11pt]{article}
+\usepackage{amsmath,amssymb,amsthm,hyperref}
+\newtheorem{theorem}{Theorem}
+\title{A counterexample to the perpendicular perturbation conjecture for normed planes}
+\author{}\date{}
+\begin{document}
+\maketitle
+Fish, King, Miller, Palsson and Wahlenmayer conjectured that, for each
+non-strictly convex norm on the plane, all sufficiently large line-like
+crescent configurations are perpendicular perturbations
+\cite[Conjecture 6.5]{fish}. Their Theorem 1.5 proves this for the maximum norm.
+The construction below uses one norm for all sizes.
+\begin{theorem}
+Let $a=4/5$, $b=6/5$, and equip the plane with the norm
+\[
+ N(x,y)=\max\{(x^2+y^2)^{1/2},(ax^2+by^2)^{1/2},4|x+y|/5\}.
+\]
+For every $n\ge4$, put $h=\pi/(1000n)$ and
+$P_j=(\cos\theta_j,\sin\theta_j)$ with
+$\theta_j=\pi/2+jh$, $1\le j\le n$.
+These points form a line-like crescent configuration in $N$, and no family
+of parallel displacements takes them to equally spaced collinear points.
+\end{theorem}
+\begin{proof}
+The maximum is a norm by the triangle inequality and positive definiteness of
+its Euclidean term. The point $(5/8,5/8)$ lies strictly inside both quadratic
+unit disks and on the supporting line $x+y=5/4$. Thus the unit circle of
+$N$ contains a nondegenerate segment.
+
+\paragraph{Distances.} Write $\eta=1/100$. All the angles lie in
+$(\pi/2,\pi/2+\eta)$. For $i<j$, the direction of the chord $P_j-P_i$
+has angle $(\theta_i+\theta_j)/2+\pi/2$. Its Euclidean unit vector $u$
+satisfies $|u_y|<\eta$. Therefore $au_x^2+bu_y^2=a+(b-a)u_y^2<1$
+and $4|u_x+u_y|/5<1$. Its $N$-length equals its Euclidean length.
+In particular $N(P_j-P_i)=2\sin((j-i)h/2)$, strictly increasing in
+the index gap. This gives precisely the equal-distance pattern of equally
+spaced collinear points, as required by Definitions 2.8 and 2.10 of
+\cite{fish}. No three points are collinear since they lie on a Euclidean circle.
+
+\paragraph{Circumcircles.} Write $E(x,y)=(ax^2+by^2)^{1/2}$.
+Any three chosen points have a unique $E$-circumcenter $c=(u,v)$
+by transformation to the Euclidean metric. For its radius $R$ and
+$z=e^{i\theta}$, the equation
+\[
+ a(\cos\theta-u)^2+b(\sin\theta-v)^2=R^2
+\]
+becomes, after multiplication by $z^2$, a quartic with leading and
+constant coefficient $(a-b)/4$ and cubic coefficient $-au+ibv$.
+If the three given roots are $z_1,z_2,z_3$, the remaining root is
+$z_4=(z_1z_2z_3)^{-1}$. Putting $z_j=e^{i(\pi/2+\delta_j)}$
+for $j\le3$ gives $z_4=e^{i(\pi/2-\sum_{j=1}^3\delta_j)}$.
+Since $0<\delta_j<\eta$, this fourth root is outside the chosen arc.
+Thus the $E$-circle passes through exactly three of the chosen points.
+
+It remains to check circles of the actual norm $N$. Set $S=\sum_{j=1}^4z_j$.
+Vieta's formula gives $au-ibv=(a-b)S/4$. The chord bound
+$|e^{it}-1|\le |t|$ gives $|S-4i|<6\eta$. Hence
+$|u|<0.0075$ and $|v-1/3|<0.005$. For \emph{every} chosen point let
+$(X,Y)=P_j-c$. Then $|X|<0.0175$ and $Y>0.66$, so
+$|X|<0.03Y$. Consequently
+\[
+ E(X,Y)^2-(X^2+Y^2)=(Y^2-X^2)/5>0,
+ \]
+\[
+4|X+Y|/5\le 0.824Y < E(X,Y).
+\]
+Thus $N=E$ in neighborhoods of all these vectors. The $N$-circle with center
+$c$ and radius $R$ contains the triple and excludes all other chosen points.
+Moreover, in neighborhoods of the triple this circle is a strictly curved
+ellipse. By Martini, Swanepoel and Wei\ss\ \cite[Proposition 21]{survey}, the
+boundaries of two distinct positive homothets of a convex disk meet in the
+union of at most two line segments, allowing singleton segments. At the
+three strictly curved points no nondegenerate boundary segment is possible.
+It follows that no other $N$-circle can contain the triple. This verifies
+the no-four-on-a-norm-circle condition of \cite[Definition 4.4]{fish}.
+
+\paragraph{Parallel displacements.} Suppose parallel displacements took the
+points to equally spaced collinear points, allowing arbitrary relabeling.
+A nonzero linear functional annihilating the displacements would project
+the two sets to identical values. Its values on our set cannot all agree
+by noncollinearity, so those values must be distinct elements of one
+arithmetic progression of length $n$. For any linear functional,
+$y_j=\ell(P_j)$ satisfies $y_{j+2}-2\cos(h)y_{j+1}+y_j=0$.
+Subtracting at consecutive indices yields
+\[
+ (y_4-y_1)/(y_3-y_2)=1+2\cos h.
+\]
+The left side would be rational. But $2\cos h=e^{ih}+e^{-ih}$ is an
+algebraic integer because $e^{ih}$ is a root of unity. It lies strictly
+between 1 and 2, so is irrational. This excludes every perpendicular
+perturbation allowed by \cite[Definition 4.1]{fish}.
+\end{proof}
+\paragraph{Relation to prior constructions.}
+The circular-arc mechanism for the distance equalities occurs in
+\cite[Theorem 1.3]{fish}. Their Example 4.3 has collinear triples for
+$n\ge5$. Here the metric that determines the chord lengths and the
+metric that determines the circumcircles of triples are active in different
+directions. All circles excluded in the general-position argument are
+circles of the one fixed norm $N$.
+\begin{thebibliography}{9}
+\bibitem{fish} S. Fish, D. King, S. J. Miller, E. A. Palsson and C. Wahlenmayer,
+\emph{Crescent configurations in normed spaces}, Integers 20 (2020), A96.
+\url{https://math.colgate.edu/~integers/u96/u96.pdf}
+\bibitem{survey} H. Martini, K. J. Swanepoel and G. Wei\ss,
+\emph{The geometry of Minkowski spaces---a survey. Part I},
+Expositiones Mathematicae 19 (2001), 97--142.
+\url{https://arxiv.org/abs/0708.2900}
+\end{thebibliography}
+\end{document}
