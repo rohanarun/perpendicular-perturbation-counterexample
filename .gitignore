@@ -1,1 +1,4 @@
 .lake/
+
+animation/build/
+animation/.venv/

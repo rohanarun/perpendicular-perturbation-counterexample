@@ -1,0 +1,38 @@
+[
+  {
+    "title": "The conjecture",
+    "start": 0.0,
+    "end": 16.381708333333332,
+    "narration": "Fish and coauthors asked a question about dots in a plane where the unit circle has a flat side. If the dots have a ruler's distance pattern, with no three on a line and no four on a circle in that geometry, must every large example come from sliding ruler marks in parallel?"
+  },
+  {
+    "title": "Ruler marks and equal chords",
+    "start": 16.381708333333332,
+    "end": 34.776125,
+    "narration": "Start with seven evenly spaced marks. Every pair one step apart has the same distance. Every pair two steps apart has a different common distance. Bend the marks onto a circular arc at equal angles. Chords of the same gap still match. The lengths change, but the pattern of equalities survives."
+  },
+  {
+    "title": "The three-part norm",
+    "start": 34.776125,
+    "end": 55.348125,
+    "narration": "Now change how distance is measured. For each displacement, take the largest of three readings. The round disk, an ellipse, and a diagonal strip overlap to make the unit ball. The strip gives it a flat side. Almost horizontal chords use the ordinary Euclidean reading. The actual arc in the proof is much smaller than the one drawn here."
+  },
+  {
+    "title": "Why no four share a norm circle",
+    "start": 55.348125,
+    "end": 76.547875,
+    "narration": "Four dots on a Euclidean circle sounds like a problem. But the conjecture means a circle of the chosen norm. Around the center determined by three dots, the ellipse controls the distances. Its fourth intersection with the Euclidean circle falls on the other side of the top. A theorem about convex curves rules out a second norm circle through the same triple."
+  },
+  {
+    "title": "Why parallel slides fail",
+    "start": 76.547875,
+    "end": 98.12591666666667,
+    "narration": "Could parallel slides still straighten the dots? Project across the direction of the slides. Each dot keeps its projected coordinate. Equally spaced ruler marks would project to an arithmetic progression, in some order. Ratios of their nonzero differences would have to be rational. Four consecutive dots on our arc force the ratio shown here to be irrational."
+  },
+  {
+    "title": "Result and proof",
+    "start": 98.12591666666667,
+    "end": 112.69616666666667,
+    "narration": "That contradiction works for every number of dots from four onward, with one fixed way of measuring distance. It gives a counterexample to Fish and coauthors' Conjecture six point five. The proof is public on Zenodo for independent review."
+  }
+]
